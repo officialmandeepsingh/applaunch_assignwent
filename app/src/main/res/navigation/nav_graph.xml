@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/WecomeFragment">
+
+    <fragment
+        android:id="@+id/WecomeFragment"
+        android:name="com.mandeep.applaunchtask.ui.fragment.WelcomeFragment"
+        android:label="@string/welcome_Fragment"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_WecomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.mandeep.applaunchtask.ui.fragment.LoginFragment"
+        android:label="User Login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_userListFragment"
+            app:destination="@id/userListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.mandeep.applaunchtask.ui.fragment.UserListFragment"
+        android:label="User List"
+        tools:layout="@layout/fragment_user_list">
+        <action
+            android:id="@+id/action_userListFragment_to_addNewUserFragment"
+            app:destination="@id/addNewUserFragment" />
+        <action
+            android:id="@+id/action_userListFragment_to_weatherReportFragment"
+            app:destination="@id/weatherReportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewUserFragment"
+        android:name="com.mandeep.applaunchtask.ui.fragment.AddNewUserFragment"
+        android:label="Add New User"
+        tools:layout="@layout/fragment_add_new_user" />
+    <fragment
+        android:id="@+id/weatherReportFragment"
+        android:name="com.mandeep.applaunchtask.ui.fragment.WeatherReportFragment"
+        android:label="fragment_weather_report"
+        tools:layout="@layout/fragment_weather_report">
+        <action
+            android:id="@+id/action_weatherReportFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@+id/WecomeFragment"
+            app:popUpToInclusive="false" />
+    </fragment>
+
+
+</navigation>

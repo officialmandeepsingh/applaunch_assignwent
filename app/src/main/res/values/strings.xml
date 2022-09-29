@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">AppLaunch Task</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="welcome_Fragment">Welcome </string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="login">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_email_id">Email Id</string>
+    <string name="msg_welcome">Welcome In\nAppLaunch\nAssignment</string>
+    <string name="Details">Details</string>
+    <string name="humidity">Humidity</string>
+    <string name="wind_speed">Wind Speed</string>
+    <string name="visibilty">Visibility</string>
+    <string name="pressure">Pressure</string>
+
+    <string name="msg_user_added">User Added Successfully in list</string>
+    <string name="msg_user_deleted">User Deleted Successfully</string>
+    <string name="error_empty_first_name">Please enter first name</string>
+    <string name="error_empty_last_name">Please enter last name</string>
+    <string name="error_valid_name">Please enter valid Name</string>
+    <string name="error_empty_email_id">Please enter email id</string>
+    <string name="error_valid_password">Please enter valid password</string>
+    <string name="error_valid_email">Please enter valid email id</string>
+    <string name="error_empty_username">Please enter your username</string>
+    <string name="error_empty_password">Please enter your password</string>
+</resources>
